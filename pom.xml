@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.theoooo</groupId>
+    <artifactId>beaker</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+    <modules>
+        <module>beaker-example-provider</module>
+        <module>beaker-specs-capability-example</module>
+        <module>beaker-specs-model</module>
+        <module>beaker-external-resource</module>
+        <module>beaker-other-resource</module>
+    </modules>
+
+    <properties>
+
+        <fastjson.version>1.2.4</fastjson.version>
+        <commons-lang3.version>3.4</commons-lang3.version>
+        <jax-rs.version>2.0.1</jax-rs.version>
+
+    </properties>
+
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${jax-rs.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
