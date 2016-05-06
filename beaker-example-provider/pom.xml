@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>beaker-example</artifactId>
+    <artifactId>beaker-example-provider</artifactId>
 
     <dependencies>
         <dependency>
