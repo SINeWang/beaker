@@ -20,9 +20,8 @@ public interface ExampleCapability {
     /**
      * Exception Code
      */
-    enum EC{
+    enum EC {
         name_is_null,
-        password_is_null
     }
 
     @POST

@@ -1,7 +1,6 @@
 package com.theoooo.beaker.example.api;
 
 
-
 import com.theoooo.beaker.example.model.SampleForm;
 import com.theoooo.beaker.example.model.SampleView;
 import com.theoooo.beaker.example.exception.SampleException;
@@ -19,10 +18,6 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_JSON)
 public interface SampleCapability {
 
-    enum EC{
-        name_is_null,
-        password_is_null
-    }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
