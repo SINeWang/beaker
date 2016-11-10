@@ -4,7 +4,7 @@ import org.smartea.example.beaker.fr.entity.Order;
 import org.smartea.example.beaker.fr.dict.OrderStatus;
 import org.smartea.example.beaker.fr.form.OrderForm;
 import org.smartea.example.beaker.fr.reciept.OrderReceipt;
-import wang.yanjiong.beaker.cube.api.Cube;
+import wang.yanjiong.beaker.cube.Cube;
 import wang.yanjiong.beaker.cube.api.basic.Query;
 import wang.yanjiong.beaker.cube.api.basic.Status;
 import wang.yanjiong.beaker.cube.api.pr.Process;

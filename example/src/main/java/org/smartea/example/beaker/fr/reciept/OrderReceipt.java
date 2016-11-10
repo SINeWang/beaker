@@ -1,9 +1,9 @@
 package org.smartea.example.beaker.fr.reciept;
 
 
-import wang.yanjiong.beaker.cube.id.RequestID;
-import wang.yanjiong.beaker.cube.id.ResponseID;
-import wang.yanjiong.beaker.cube.id.TransactionID;
+import wang.yanjiong.beaker.cube.api.id.RequestID;
+import wang.yanjiong.beaker.cube.api.id.ResponseID;
+import wang.yanjiong.beaker.cube.api.id.TransactionID;
 
 /**
  * Created by WangYanJiong on 11/10/16.
