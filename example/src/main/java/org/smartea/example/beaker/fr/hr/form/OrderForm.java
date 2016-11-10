@@ -1,4 +1,4 @@
-package org.smartea.example.beaker.fr.form;
+package org.smartea.example.beaker.fr.hr.form;
 
 import wang.yanjiong.beaker.combi.cubes.basic.api.id.RequestID;
 import wang.yanjiong.beaker.combi.cubes.basic.api.id.TransactionID;

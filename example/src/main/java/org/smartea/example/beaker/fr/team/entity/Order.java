@@ -1,4 +1,4 @@
-package org.smartea.example.beaker.fr.entity;
+package org.smartea.example.beaker.fr.team.entity;
 
 /**
  * Created by WangYanJiong on 11/10/16.

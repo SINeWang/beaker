@@ -1,4 +1,4 @@
-package org.smartea.example.beaker.fr.dict;
+package org.smartea.example.beaker.fr.finance.dict;
 
 /**
  * Created by WangYanJiong on 11/10/16.

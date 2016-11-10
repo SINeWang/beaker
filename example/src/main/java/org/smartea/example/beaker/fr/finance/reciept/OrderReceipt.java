@@ -1,4 +1,4 @@
-package org.smartea.example.beaker.fr.reciept;
+package org.smartea.example.beaker.fr.finance.reciept;
 
 
 import wang.yanjiong.beaker.combi.cubes.basic.api.id.RequestID;
