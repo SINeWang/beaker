@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.cube.api.pr;
+package wang.yanjiong.beaker.cube.basic.api.id;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
  * Created by WangYanJiong on 11/9/16.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
-public @interface Process {
+@Target({ElementType.FIELD, ElementType.PARAMETER})
+public @interface RequestID {
 }

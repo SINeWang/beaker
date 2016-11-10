@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.cube.spi;
+package wang.yanjiong.beaker.cube.async.spi;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,7 +10,5 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Timeout {
-
-    int value();
+public @interface Notify {
 }

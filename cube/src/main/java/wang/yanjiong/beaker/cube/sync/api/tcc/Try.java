@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.cube;
+package wang.yanjiong.beaker.cube.sync.api.tcc;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
  * Created by WangYanJiong on 11/9/16.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface Cube {
+@Target(ElementType.METHOD)
+public @interface Try {
 }
