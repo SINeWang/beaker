@@ -13,6 +13,7 @@
         <module>example</module>
         <module>droplets</module>
         <module>combi</module>
+        <module>shake</module>
     </modules>
 
     <properties>
