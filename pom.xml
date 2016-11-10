@@ -11,6 +11,8 @@
     <modules>
         <module>cubes</module>
         <module>example</module>
+        <module>droplets</module>
+        <module>combi</module>
     </modules>
 
     <properties>

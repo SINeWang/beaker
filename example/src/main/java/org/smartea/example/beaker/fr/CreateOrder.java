@@ -4,11 +4,11 @@ import org.smartea.example.beaker.fr.entity.Order;
 import org.smartea.example.beaker.fr.dict.OrderStatus;
 import org.smartea.example.beaker.fr.form.OrderForm;
 import org.smartea.example.beaker.fr.reciept.OrderReceipt;
-import wang.yanjiong.beaker.cubes.sync.SyncCube;
-import wang.yanjiong.beaker.cubes.basic.api.Query;
-import wang.yanjiong.beaker.cubes.basic.api.Status;
-import wang.yanjiong.beaker.cubes.sync.api.pr.Process;
-import wang.yanjiong.beaker.cubes.sync.api.pr.Recall;
+import wang.yanjiong.beaker.combi.cubes.sync.SyncCube;
+import wang.yanjiong.beaker.combi.cubes.basic.api.Query;
+import wang.yanjiong.beaker.combi.cubes.basic.api.Status;
+import wang.yanjiong.beaker.combi.cubes.sync.api.pr.Process;
+import wang.yanjiong.beaker.combi.cubes.sync.api.pr.Recall;
 
 /**
  * Created by WangYanJiong on 11/10/16.
