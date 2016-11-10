@@ -10,7 +10,6 @@
     <version>0.1.0-SNAPSHOT</version>
     <modules>
         <module>cubes</module>
-        <module>example</module>
         <module>droplets</module>
         <module>combi</module>
         <module>shake</module>
