@@ -11,5 +11,12 @@
 
     <artifactId>combi</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>wang.yanjiong.beaker</groupId>
+            <artifactId>cubes</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
