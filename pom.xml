@@ -13,6 +13,7 @@
         <module>runtime-sender</module>
         <module>runtime-cube</module>
         <module>runtime-combo</module>
+        <module>example</module>
     </modules>
 
     <properties>
