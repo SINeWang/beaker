@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>wang.yanjiong.beaker</groupId>
-            <artifactId>cube</artifactId>
+            <artifactId>cubes</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

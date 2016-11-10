@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.cube.sync.api.tcc;
+package wang.yanjiong.beaker.cubes.sync.api.tcc;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

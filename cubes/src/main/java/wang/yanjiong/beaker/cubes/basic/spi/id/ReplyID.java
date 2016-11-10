@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.cube.basic.spi.id;
+package wang.yanjiong.beaker.cubes.basic.spi.id;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
