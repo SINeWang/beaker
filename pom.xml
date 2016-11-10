@@ -11,8 +11,8 @@
     <modules>
         <module>runtime-receiver</module>
         <module>runtime-sender</module>
-        <module>runtime-combi</module>
         <module>runtime-cube</module>
+        <module>runtime-combo</module>
     </modules>
 
     <properties>
