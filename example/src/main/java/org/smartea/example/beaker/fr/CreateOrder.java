@@ -7,8 +7,8 @@ import org.smartea.example.beaker.fr.reciept.OrderReceipt;
 import wang.yanjiong.beaker.cube.api.Cube;
 import wang.yanjiong.beaker.cube.api.basic.Query;
 import wang.yanjiong.beaker.cube.api.basic.Status;
-import wang.yanjiong.beaker.cube.api.fr.Forward;
-import wang.yanjiong.beaker.cube.api.fr.Reverse;
+import wang.yanjiong.beaker.cube.api.pr.Process;
+import wang.yanjiong.beaker.cube.api.pr.Recall;
 
 /**
  * Created by WangYanJiong on 11/10/16.
@@ -16,16 +16,16 @@ import wang.yanjiong.beaker.cube.api.fr.Reverse;
 @Cube
 public interface CreateOrder {
 
-    @Forward
-    OrderReceipt process(OrderForm orderForm);
+    @Process
+    OrderReceipt method1(OrderForm orderForm);
 
-    @Reverse
-    Object recall(Object object);
+    @Recall
+    Object method2(Object object);
 
     @Query
-    Order retrieve(Object object);
+    Order method3(Object object);
 
     @Status
-    OrderStatus status(Object object);
+    OrderStatus method4(Object object);
 
 }

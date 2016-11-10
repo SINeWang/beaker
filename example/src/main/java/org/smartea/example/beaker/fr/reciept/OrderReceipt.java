@@ -1,5 +1,6 @@
 package org.smartea.example.beaker.fr.reciept;
 
+
 import wang.yanjiong.beaker.cube.id.RequestID;
 import wang.yanjiong.beaker.cube.id.ResponseID;
 import wang.yanjiong.beaker.cube.id.TransactionID;
@@ -10,11 +11,11 @@ import wang.yanjiong.beaker.cube.id.TransactionID;
 public class OrderReceipt {
 
     @RequestID
-    private String orderId;
+    private String id1;
 
     @TransactionID
-    private String sessionId;
+    private String id2;
 
     @ResponseID
-    private String responseId;
+    private String id3;
 }
