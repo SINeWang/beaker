@@ -13,12 +13,14 @@
         <module>droplets</module>
         <module>combi</module>
         <module>shake</module>
+        <module>examples</module>
     </modules>
 
     <properties>
         <fastjson.version>1.2.4</fastjson.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <jax-rs.version>2.0.1</jax-rs.version>
+        <junit.version>4.12</junit.version>
 
     </properties>
 
@@ -35,6 +37,12 @@
                 <groupId>javax.ws.rs</groupId>
                 <artifactId>javax.ws.rs-api</artifactId>
                 <version>${jax-rs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

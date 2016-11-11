@@ -5,7 +5,7 @@ package wang.yanjiong.beaker.combi;
  */
 public class EntityFactory {
 
-    public <T> T build(Class<T> target, Object... objects) {
+    public static <T> T newInstance(Class<T> target, Object... objects) {
         try {
             T t = target.newInstance();
             return t;
