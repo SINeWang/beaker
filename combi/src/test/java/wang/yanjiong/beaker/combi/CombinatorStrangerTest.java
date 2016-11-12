@@ -5,7 +5,6 @@ import org.smartea.beaker.example.implement.frontdesk.WelcomeLabor;
 import org.smartea.beaker.example.regulation.frontdesk.api.WelcomeRegulation;
 import org.smartea.beaker.example.regulation.frontdesk.entity.IdentityCard;
 import org.smartea.beaker.example.regulation.frontdesk.entity.Stranger;
-import org.smartea.beaker.example.regulation.frontdesk.entity.Visitor;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
 
 import java.util.concurrent.*;

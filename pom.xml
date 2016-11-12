@@ -13,7 +13,6 @@
         <module>droplets</module>
         <module>combi</module>
         <module>shake</module>
-        <module>examples</module>
     </modules>
 
     <properties>

@@ -1,9 +1,11 @@
 package org.smartea.beaker.example.regulation.frontdesk.entity;
 
+import wang.yanjiong.beaker.combi.droplets.Droplets;
+
 /**
  * Created by WangYanJiong on 10/11/2016.
  */
-public class AccessCard {
+public class AccessCard extends Droplets {
 
     private String userName;
 
@@ -14,4 +16,6 @@ public class AccessCard {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+
 }
