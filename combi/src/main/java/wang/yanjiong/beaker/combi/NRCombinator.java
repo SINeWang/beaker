@@ -107,13 +107,8 @@ public class NRCombinator implements Combinator {
         String namespace = concept.namespace();
         String name = concept.name();
         for (Object droplet : droplets) {
-            Field dropletField = getOneFieldsAnnotatedWithConcept(droplet.getClass(), namespace, name);
-            try {
-                dropletField.setAccessible(true);
-                return dropletField.get(droplet);
-            } catch (IllegalAccessException e) {
-                throw new IllegalArgumentException();
-            }
+            Object value =  getOneFieldsAnnotatedWithConcept(droplet.getClass(), namespace, name, droplet);
+            return value;
         }
         throw new IllegalArgumentException();
     }
@@ -199,16 +194,31 @@ public class NRCombinator implements Combinator {
         throw new IllegalArgumentException();
     }
 
-    public static Field getOneFieldsAnnotatedWithConcept(final Class<?> klass, String namespace, String name) {
-        for (Class<?> type = klass; type != Object.class; type = klass.getSuperclass()) {
+    public static Object getOneFieldsAnnotatedWithConcept(final Class<?> klass, String namespace, String name, final Object droplet) {
+        for (Class<?> type = klass; type != Object.class; ) { //type = klass.getSuperclass()
             final Field[] allFields = klass.getDeclaredFields();
             for (final Field field : allFields) {
                 if (field.isAnnotationPresent(Concept.class)) {
                     Concept concept = field.getAnnotation(Concept.class);
                     if (concept.namespace().equalsIgnoreCase(namespace) && concept.name().equalsIgnoreCase(name)) {
-                        return field;
+                        field.setAccessible(true);
+                        try {
+                            return field.get(droplet);
+                        } catch (IllegalAccessException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
+            }
+            for (final Field field : allFields) {
+                try {
+                    field.setAccessible(true);
+                    Object subDroplet = field.get(droplet);
+                    return getOneFieldsAnnotatedWithConcept(field.getType(), namespace, name, subDroplet);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+
             }
         }
         throw new IllegalArgumentException();

@@ -5,7 +5,7 @@ import wang.yanjiong.beaker.combi.droplets.Concept;
 /**
  * Created by WangYanJiong on 11/11/16.
  */
-public class Stranger {
+public class IdentityCard {
 
     @Concept(namespace = "default", name = "name", version = "1")
     private String name;

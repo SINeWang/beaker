@@ -1,20 +1,18 @@
 package org.smartea.beaker.example.regulation.frontdesk.entity;
 
-import wang.yanjiong.beaker.combi.droplets.Concept;
-
 /**
  * Created by WangYanJiong on 11/11/16.
  */
-public class Visitor {
+public class Stranger {
 
-    @Concept(namespace = "default", name = "name", version = "1")
-    private String name;
 
-    public String getName() {
-        return name;
+    private IdentityCard identityCard;
+
+    public IdentityCard getIdentityCard() {
+        return identityCard;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setIdentityCard(IdentityCard identityCard) {
+        this.identityCard = identityCard;
     }
 }
