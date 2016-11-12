@@ -11,7 +11,7 @@
     <modules>
         <module>cubes</module>
         <module>droplets</module>
-        <module>combi</module>
+        <module>comixer</module>
         <module>shake</module>
     </modules>
 
