@@ -8,7 +8,13 @@ import wang.yanjiong.beaker.combi.cubes.basic.Process;
  */
 public class Request extends Action {
 
-    public Request(Process process) {
+    private String transactionId;
+
+    private String requestId;
+
+    public Request(Process process, String requestId, String transactionId) {
         super(process);
+        this.requestId = requestId;
+        this.transactionId = transactionId;
     }
 }

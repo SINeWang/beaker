@@ -6,6 +6,7 @@ import org.smartea.beaker.example.regulation.frontdesk.api.WelcomeRegulation;
 import org.smartea.beaker.example.regulation.frontdesk.entity.IdentityCard;
 import org.smartea.beaker.example.regulation.frontdesk.entity.Stranger;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
+import wang.yanjiong.beaker.remix.SimpleMixer;
 
 import java.util.concurrent.*;
 
@@ -24,7 +25,7 @@ public class CombinatorStrangerTest {
         stranger.setIdentityCard(identityCard);
 
 
-        NRCombinator combinator = new NRCombinator();
+        SerialCombinator combinator = new SerialCombinator(new SimpleMixer());
 
         combinator.addCubes(WelcomeRegulation.class, new WelcomeLabor());
         combinator.addDroplets(stranger);

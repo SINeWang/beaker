@@ -5,13 +5,14 @@ import org.smartea.beaker.example.implement.frontdesk.WelcomeLabor;
 import org.smartea.beaker.example.regulation.frontdesk.api.WelcomeRegulation;
 import org.smartea.beaker.example.regulation.frontdesk.entity.Visitor;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
+import wang.yanjiong.beaker.remix.SimpleMixer;
 
 import java.util.concurrent.*;
 
 /**
  * Created by WangYanJiong on 10/11/2016.
  */
-public class CombinatorTest {
+public class CombinatorVisitorTest {
 
 
     @Test
@@ -21,7 +22,7 @@ public class CombinatorTest {
         visitor.setName("zhangsan");
 
 
-        NRCombinator combinator = new NRCombinator();
+        SerialCombinator combinator = new SerialCombinator(new SimpleMixer());
 
         combinator.addCubes(WelcomeRegulation.class, new WelcomeLabor());
         combinator.addDroplets(visitor);
