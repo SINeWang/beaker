@@ -1,4 +1,4 @@
-package org.smartea.beaker.example.regulation.finance.dict;
+package org.smartea.beaker.example.regulation.finance.entity;
 
 /**
  * Created by WangYanJiong on 11/10/16.

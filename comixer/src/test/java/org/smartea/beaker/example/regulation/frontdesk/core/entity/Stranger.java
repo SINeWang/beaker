@@ -1,4 +1,4 @@
-package org.smartea.beaker.example.regulation.frontdesk.entity;
+package org.smartea.beaker.example.regulation.frontdesk.core.entity;
 
 /**
  * Created by WangYanJiong on 11/11/16.

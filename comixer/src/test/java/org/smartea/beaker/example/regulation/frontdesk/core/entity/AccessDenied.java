@@ -1,4 +1,4 @@
-package org.smartea.beaker.example.regulation.frontdesk.entity;
+package org.smartea.beaker.example.regulation.frontdesk.core.entity;
 
 import wang.yanjiong.beaker.combi.cubes.basic.exception.FailedReason;
 

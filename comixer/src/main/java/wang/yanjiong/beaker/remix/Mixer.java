@@ -19,4 +19,6 @@ public interface Mixer {
     Field getOneFieldAnnotatedWith(final Class<?> klass, final Class<? extends Annotation> annotation);
 
     Object getValueFromDropletsWithAnnotation(Field field, Object[] droplets);
+
+    <T> T fillWithConcepts(Object object, final Object[] droplets);
 }

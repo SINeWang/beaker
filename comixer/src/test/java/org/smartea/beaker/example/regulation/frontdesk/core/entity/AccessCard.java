@@ -1,5 +1,6 @@
-package org.smartea.beaker.example.regulation.frontdesk.entity;
+package org.smartea.beaker.example.regulation.frontdesk.core.entity;
 
+import wang.yanjiong.beaker.combi.droplets.Concept;
 import wang.yanjiong.beaker.combi.droplets.Droplets;
 
 /**
@@ -7,6 +8,7 @@ import wang.yanjiong.beaker.combi.droplets.Droplets;
  */
 public class AccessCard extends Droplets {
 
+    @Concept(namespace = "default", name = "name", version = "1")
     private String userName;
 
     public String getUserName() {

@@ -31,6 +31,32 @@ public class SimpleMixer implements Mixer {
         throw new IllegalArgumentException();
     }
 
+    public <T> T fillWithConcepts(Object object, final Object[] droplets) {
+        if (object.getClass() == Object.class) {
+            return (T) object;
+        } else {
+            if (object.getClass().isPrimitive()) {
+                return (T) object;
+            }
+        }
+        try {
+            Object instance = object;
+            Class clazz = object.getClass();
+            for (Field field : clazz.getDeclaredFields()) {
+                if (field.getAnnotation(Concept.class) != null) {
+                    field.setAccessible(true);
+                    if (field.get(instance) == null) {
+                        Object value = getValueFromDropletsWithAnnotation(field, droplets);
+                        field.set(object, value);
+                    }
+                }
+            }
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        return (T) object;
+    }
+
     public Object getOneFieldsAnnotatedWithConcept(final Class<?> klass, String namespace, String name, final Object droplet) {
         for (Class<?> type = klass; type != Object.class; ) { //type = klass.getSuperclass()
             final Field[] allFields = klass.getDeclaredFields();

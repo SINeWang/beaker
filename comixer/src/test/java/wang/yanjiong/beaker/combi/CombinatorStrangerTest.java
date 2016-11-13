@@ -1,10 +1,10 @@
 package wang.yanjiong.beaker.combi;
 
 import org.junit.Test;
-import org.smartea.beaker.example.implement.frontdesk.WelcomeLabor;
-import org.smartea.beaker.example.regulation.frontdesk.api.WelcomeRegulation;
-import org.smartea.beaker.example.regulation.frontdesk.entity.IdentityCard;
-import org.smartea.beaker.example.regulation.frontdesk.entity.Stranger;
+import org.smartea.beaker.example.implement.frontdesk.api.WelcomeProcess;
+import org.smartea.beaker.example.regulation.frontdesk.api.Welcome;
+import org.smartea.beaker.example.regulation.frontdesk.core.entity.IdentityCard;
+import org.smartea.beaker.example.regulation.frontdesk.core.entity.Stranger;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
 import wang.yanjiong.beaker.remix.SimpleMixer;
 
@@ -27,7 +27,7 @@ public class CombinatorStrangerTest {
 
         SerialCombinator combinator = new SerialCombinator(new SimpleMixer());
 
-        combinator.addCubes(WelcomeRegulation.class, new WelcomeLabor());
+        combinator.addCubes(Welcome.class, new WelcomeProcess());
         combinator.addDroplets(stranger);
 
         ExecutorService threadPool = Executors.newCachedThreadPool();
