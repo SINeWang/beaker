@@ -17,5 +17,7 @@ public class AccessCard extends Droplets {
         this.userName = userName;
     }
 
-
+    public boolean isValid() {
+        return false;
+    }
 }

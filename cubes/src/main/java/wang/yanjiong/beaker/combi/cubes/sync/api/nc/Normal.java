@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.combi.cubes.sync.api.nr;
+package wang.yanjiong.beaker.combi.cubes.sync.api.nc;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -3,9 +3,8 @@ package org.smartea.beaker.example.regulation.finance.dict;
 /**
  * Created by WangYanJiong on 11/10/16.
  */
-public enum MateStatus {
+public enum BindAccountReceipt {
     UNKNOWN,
-    WAITING_FOR_ENTRANCE,
-    NORMAL,
-    LEFT,
+    SUCCESS,
+    WRONG_NUMBER,
 }

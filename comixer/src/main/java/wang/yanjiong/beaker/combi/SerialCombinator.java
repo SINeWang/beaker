@@ -1,7 +1,7 @@
 package wang.yanjiong.beaker.combi;
 
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
-import wang.yanjiong.beaker.combi.cubes.sync.api.nr.Normal;
+import wang.yanjiong.beaker.combi.cubes.sync.api.nc.Normal;
 import wang.yanjiong.beaker.combi.droplets.Concept;
 import wang.yanjiong.beaker.remix.Mixer;
 
@@ -43,19 +43,6 @@ public class SerialCombinator extends CombinatorBoundary implements Combinator {
 
     public Response call() {
         for (Class cube : cubes) {
-            Method method = mixer.getMethodAnnotatedWith(cube, Normal.class);
-
-            Class[] parameterTypes = method.getParameterTypes();
-            List parameters = new ArrayList();
-            for (Class parameterType : parameterTypes) {
-                try {
-                    parameters.add(parameterType.newInstance());
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                }
-            }
 
             final Object actualInstance = cubeInstances.get(cube.getName());
 
@@ -76,8 +63,22 @@ public class SerialCombinator extends CombinatorBoundary implements Combinator {
                 }
             });
 
+            Method method = mixer.getMethodAnnotatedWith(cube, Normal.class);
+
+            Class[] parameterTypes = method.getParameterTypes();
+            List proxyArgs = new ArrayList();
+            for (Class parameterType : parameterTypes) {
+                try {
+                    proxyArgs.add(parameterType.newInstance());
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            }
+
             try {
-                Object result = method.invoke(proxy, parameters.toArray());
+                Object result = method.invoke(proxy, proxyArgs.toArray());
                 this.response = new Response(process, result);
             } catch (IllegalAccessException e) {
                 e.printStackTrace();

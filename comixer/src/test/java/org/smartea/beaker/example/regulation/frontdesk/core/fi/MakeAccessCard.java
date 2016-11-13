@@ -1,4 +1,4 @@
-package org.smartea.beaker.example.regulation.frontdesk.spi;
+package org.smartea.beaker.example.regulation.frontdesk.core.fi;
 
 
 import org.smartea.beaker.example.regulation.frontdesk.dict.BuildAccessCardFailedReason;
