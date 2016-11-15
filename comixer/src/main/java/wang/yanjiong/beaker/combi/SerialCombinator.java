@@ -1,7 +1,7 @@
 package wang.yanjiong.beaker.combi;
 
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
-import wang.yanjiong.beaker.combi.cubes.sync.api.nc.Normal;
+import wang.yanjiong.beaker.combi.cubes.sync.api.cc.Commit;
 import wang.yanjiong.beaker.combi.droplets.Concept;
 import wang.yanjiong.beaker.remix.Mixer;
 
@@ -63,7 +63,7 @@ public class SerialCombinator extends CombinatorBoundary implements Combinator {
                 }
             });
 
-            Method method = mixer.getMethodAnnotatedWith(cube, Normal.class);
+            Method method = mixer.getMethodAnnotatedWith(cube, Commit.class);
 
             Class[] parameterTypes = method.getParameterTypes();
             List proxyArgs = new ArrayList();

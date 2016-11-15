@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.combi.cubes.sync.api.nc;
+package wang.yanjiong.beaker.combi.cubes.sync.api.cc;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Normal {
+public @interface Compensation {
 }

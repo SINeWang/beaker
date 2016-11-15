@@ -4,7 +4,7 @@ import org.smartea.beaker.example.regulation.frontdesk.core.entity.AccessCard;
 import org.smartea.beaker.example.regulation.frontdesk.core.entity.AccessDenied;
 import org.smartea.beaker.example.regulation.frontdesk.core.entity.Guest;
 import wang.yanjiong.beaker.combi.cubes.sync.SyncCube;
-import wang.yanjiong.beaker.combi.cubes.sync.api.nc.Normal;
+import wang.yanjiong.beaker.combi.cubes.sync.api.cc.Commit;
 
 /**
  * Created by WangYanJiong on 11/10/16.
@@ -12,7 +12,7 @@ import wang.yanjiong.beaker.combi.cubes.sync.api.nc.Normal;
 @SyncCube
 public interface Welcome {
 
-    @Normal
+    @Commit
     AccessCard method1(Guest guest) throws AccessDenied;
 
 
