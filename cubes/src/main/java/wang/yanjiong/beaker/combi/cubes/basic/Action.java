@@ -8,14 +8,14 @@ import java.util.Date;
 public abstract class Action {
 
 
-    private final String processID;
+    private final String commitId;
 
     private final String id;
 
     private final Date dateTime = new Date();
 
-    public Action(Process process) {
-        this.processID = process.getId();
+    public Action(Commit commit) {
+        this.commitId = commit.getId();
         this.id = null;
     }
 
@@ -27,7 +27,7 @@ public abstract class Action {
         return dateTime;
     }
 
-    public String getProcessID(){
-        return processID;
+    public String getCommitId(){
+        return commitId;
     }
 }

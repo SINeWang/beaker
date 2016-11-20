@@ -1,6 +1,6 @@
 package wang.yanjiong.beaker.combi;
 
-import wang.yanjiong.beaker.combi.cubes.basic.Process;
+import wang.yanjiong.beaker.combi.cubes.basic.Commit;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Request;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Response;
 import wang.yanjiong.beaker.combi.cubes.basic.api.Transaction;
@@ -19,14 +19,14 @@ public abstract class CombinatorBoundary {
 
     protected Response response;
 
-    protected Process process;
+    protected Commit process;
 
     protected Mixer mixer;
 
     protected Object[] droplets;
 
     public CombinatorBoundary() {
-        this.process = new Process();
+        this.process = new Commit();
     }
 
     public Transaction getTransaction() {

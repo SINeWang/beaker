@@ -1,4 +1,4 @@
-package wang.yanjiong.beaker.combi.cubes.basic;
+package wang.yanjiong.beaker.combi.cubes.basic.api;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,9 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by WangYanJiong on 10/11/2016.
+ * Created by WangYanJiong on 20/11/2016.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.PACKAGE})
-public @interface Prescription {
+@Target(ElementType.FIELD)
+public @interface Signal {
 }

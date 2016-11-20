@@ -79,11 +79,12 @@ public class SerialCombinator extends CombinatorBoundary implements Combinator {
 
             try {
                 Object result = method.invoke(proxy, proxyArgs.toArray());
-                this.response = new Response(process, result);
+                this.response = new Response(process, true, result);
             } catch (IllegalAccessException e) {
-                e.printStackTrace();
+                this.response = new Response(process, false, e);
             } catch (InvocationTargetException e) {
                 e.printStackTrace();
+                this.response = new Response(process, false, e);
             }
         }
         return this.response;

@@ -13,6 +13,6 @@ import wang.yanjiong.beaker.combi.cubes.sync.api.cc.Commit;
 public interface BindAccount {
 
     @Commit
-    BindAccountReceipt  method1(Guest guest) throws AccessDenied;
+    BindAccountReceipt  method1(Guest guest);
 
 }
