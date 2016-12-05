@@ -1,7 +1,7 @@
-package org.smartea.beaker.example.implement.frontdesk.api;
+package org.smartea.beaker.example.frontdesk.api;
 
-import org.smartea.beaker.example.implement.frontdesk.api.dai.FreshManStorage;
-import org.smartea.beaker.example.implement.frontdesk.core.fi.AccessCardBuilderProcess;
+import org.smartea.beaker.example.frontdesk.api.dai.FreshManStorage;
+import org.smartea.beaker.example.frontdesk.core.fi.AccessCardBuilderProcess;
 import org.smartea.beaker.example.regulation.frontdesk.api.Welcome;
 import org.smartea.beaker.example.regulation.frontdesk.core.dai.FreshManRepository;
 import org.smartea.beaker.example.regulation.frontdesk.core.dict.MakeAccessCardFailedReason;

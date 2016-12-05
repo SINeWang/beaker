@@ -1,7 +1,7 @@
 package wang.yanjiong.beaker.combi;
 
 import org.junit.Test;
-import org.smartea.beaker.example.implement.frontdesk.api.WelcomeProcess;
+import org.smartea.beaker.example.frontdesk.api.WelcomeProcess;
 import org.smartea.beaker.example.regulation.frontdesk.api.Welcome;
 import org.smartea.beaker.example.regulation.frontdesk.core.entity.IdentityCard;
 import org.smartea.beaker.example.regulation.frontdesk.core.entity.Stranger;

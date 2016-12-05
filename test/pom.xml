@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>comixer</artifactId>
+    <artifactId>test</artifactId>
+
 
     <dependencies>
         <dependency>
@@ -17,6 +18,19 @@
             <artifactId>cubes</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>wang.yanjiong.beaker</groupId>
+            <artifactId>comixer</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
 
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 </project>

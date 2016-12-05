@@ -1,4 +1,4 @@
-package org.smartea.beaker.example.implement.frontdesk.core.fi;
+package org.smartea.beaker.example.frontdesk.core.fi;
 
 import org.smartea.beaker.example.regulation.frontdesk.core.dict.MakeAccessCardFailedReason;
 import org.smartea.beaker.example.regulation.frontdesk.core.entity.AccessCard;

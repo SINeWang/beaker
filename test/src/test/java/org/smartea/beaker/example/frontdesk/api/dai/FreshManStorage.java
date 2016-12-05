@@ -1,4 +1,4 @@
-package org.smartea.beaker.example.implement.frontdesk.api.dai;
+package org.smartea.beaker.example.frontdesk.api.dai;
 
 import org.smartea.beaker.example.regulation.frontdesk.core.dai.FreshManRepository;
 import org.smartea.beaker.example.regulation.frontdesk.core.entity.Employee;
