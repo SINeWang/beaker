@@ -14,6 +14,7 @@
         <module>comixer</module>
         <module>shake</module>
         <module>test</module>
+        <module>vessels</module>
     </modules>
 
     <properties>
@@ -21,6 +22,7 @@
         <commons-lang3.version>3.4</commons-lang3.version>
         <jax-rs.version>2.0.1</jax-rs.version>
         <junit.version>4.12</junit.version>
+        <httpclient.version>4.5.2</httpclient.version>
 
     </properties>
 
@@ -28,6 +30,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
