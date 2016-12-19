@@ -9,5 +9,5 @@ import wang.yanjiong.beaker.vessels.cc.message.CommitResponse;
 public interface CommitClient {
 
 
-    CommitResponse commit(CommitRequest request);
+    CommitResponse commit(CommitRequest request, CommitProvider provider);
 }

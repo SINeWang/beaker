@@ -9,10 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>vessels</artifactId>
+    <artifactId>vessels-http11</artifactId>
 
 
     <dependencies>
+        <dependency>
+            <groupId>wang.yanjiong.beaker</groupId>
+            <artifactId>vessels</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
 
     </dependencies>
 </project>

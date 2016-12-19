@@ -15,6 +15,7 @@
         <module>shake</module>
         <module>test</module>
         <module>vessels</module>
+        <module>vessels-http11</module>
     </modules>
 
     <properties>
