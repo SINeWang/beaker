@@ -11,6 +11,7 @@ import wang.yanjiong.beaker.vessels.cc.message.CommitRequest;
 import wang.yanjiong.beaker.vessels.cc.message.CommitResponse;
 
 import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,13 +20,17 @@ import java.util.List;
  */
 public class HTTP11CommitClient implements CommitClient {
 
+    private URLResolver resolver;
+
 
     public CommitResponse commit(CommitRequest request, CommitProvider provider) {
 
         CloseableHttpClient httpclient = HttpClients.createDefault();
 
 
-        HttpPost httpPost = new HttpPost("http://targethost/login");
+        URI uri = resolver.getURIByCommitProvider(provider);
+
+        HttpPost httpPost = new HttpPost(uri);
 
         List<NameValuePair> nvps = new ArrayList<NameValuePair>();
         try {
