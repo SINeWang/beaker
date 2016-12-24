@@ -20,21 +20,21 @@ public class WelcomeProcess implements Welcome {
 
     private AccessCardBuilder accessCardBuilder = new AccessCardBuilderProcess();
 
-    public AccessCard method1(Guest guest) throws AccessDenied {
+    public AccessCard method1(Guest guest)  {
         if (freshManRepository.isFreshMan(guest)) {
             try {
                 Employee employee = freshManRepository.getFreshMan(guest);
                 return accessCardBuilder.make(employee);
             } catch (MakeAccessCardFailedReason buildAccessCardFailedReason) {
-                throw new AccessDenied();
             }
         } else {
             try {
                 return accessCardBuilder.make(guest);
             } catch (MakeAccessCardFailedReason makeAccessCardFailedReason) {
-                throw new AccessDenied();
-            }
-        }
 
+            }
+            return null;
+        }
+        return null;
     }
 }
